@@ -9,6 +9,7 @@ const Welcome = ()=> {
             <h1 className='WelcomeMsg'>Welcome to MZmZ IoT</h1>
             <p>Connect devices through internet</p>
             <Button as={Link} to={'/workouts'} variant='secondary' className='button1 button2'>Get Started</Button>
+            <Button as={Link} to={'/cubesurfer'} variant='secondary' className='button1 button2'>Play</Button>
         </div>
     </div>
     );

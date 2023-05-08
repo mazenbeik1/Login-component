@@ -24,6 +24,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.11.0",
     "react-social-icons": "^5.15.0",
+    "react-unity-webgl": "^9.4.0",
     "redux": "^4.2.1",
     "sass": "^1.62.1",
     "use-force-update": "^1.0.11"

@@ -17,6 +17,7 @@ import Workouts from './cmps/Workouts/Workouts';
 import { useDispatch, useSelector } from 'react-redux';
 import { _setUser } from './Redux/user';
 import { Alert } from 'react-bootstrap';
+import Game from './cmps/Game/Game';
 
 function App() {
 	const dispatch = useDispatch();
@@ -58,6 +59,7 @@ function App() {
 					</Route>
 					<Route path="/signup" element={<Signup />}/>
 					<Route path="/login" element={<Signin />}/>
+					<Route path="/cubesurfer" element={<Game />}/>
 					<Route path='*' element={<NotFound/>}/>
 				</Routes>
 			</Router>
