@@ -1,5 +1,5 @@
 import exercises from "../../consts/exercises";
-import Exercise from "../exercise/exercise";
+import Exercise from "../Exercise/Exercise";
 
 const  Workouts = () => {
     return ( 
