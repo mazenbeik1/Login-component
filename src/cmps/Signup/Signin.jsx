@@ -84,20 +84,20 @@ const Signin = (props) => {
                         <br />
                         <Button as={Link} to={'/signup'} className='secondaryBtn signupBtns' variant="secondary" >Don't have an account</Button>
                         <br />
-                        <button type="button" className="fab btn btn-link btn-floating mx-1" id='fab-fb' onClick={signinWithGoogle}>
+                        <button type="button" className="fab btn btn-link btn-floating mx-1 googleButton" id='fab-fb' onClick={signinWithGoogle}>
                             <SocialIcon network="google" />
                         </button>
 
-                        <button type="button" className="fab btn btn-link btn-floating mx-1" id='fab-go'> 
+                        {/* <button type="button" className="fab btn btn-link btn-floating mx-1" id='fab-go'> 
                             <SocialIcon network="facebook" />
-                        </button>
-                        <button type="button" className="fab btn btn-link btn-floating mx-1" id='fab-fb' >
+                        </button> */}
+                        {/* <button type="button" className="fab btn btn-link btn-floating mx-1" id='fab-fb' >
                             <SocialIcon network="discord" />
                         </button>
 
                         <button type="button" className="fab btn btn-link btn-floating mx-1" id='fab-go'> 
                             <SocialIcon network="github" />
-                        </button>
+                        </button> */}
 
                     {/* <Fabs/> */}
 
