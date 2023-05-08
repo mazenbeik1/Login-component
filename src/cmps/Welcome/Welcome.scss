@@ -1,0 +1,32 @@
+.WelcomePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80vw;
+    margin: 30px auto;
+    background-color: rgba(239, 233, 233, 0.671);
+    border-radius: 10em;
+}
+  
+.WelcomePage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.WelcomeMsg{
+    padding: 2vw;
+    background: linear-gradient(to right, #4bbae9a7 10%, #c207d76f 100%);
+    border-radius: 50px;
+}
+
+.button1{
+
+}
+
+.button1:hover{
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
