@@ -1,8 +1,8 @@
 import { auth, googleProvider } from "../../firebase/config";
 import { signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import { Button, Col, FloatingLabel, Form, Row } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {db} from '../../firebase/config'
 import { SocialIcon } from 'react-social-icons';
 import { useDispatch, useSelector } from "react-redux";
@@ -16,7 +16,16 @@ const Signin = (props) => {
     const [password,setPassword] = useState("");
     const errors = useSelector((state) => state.errors.errors);
     const dispatch = useDispatch();
+    const user = useSelector((state) => state.user.email);
+    const navigate = useNavigate();
     
+
+    useEffect(()=>{
+        if(user != "Guest"){
+            navigate("/");
+        }
+    })
+
     const signin = async(props)=>{
         try {
             if(password){
@@ -35,6 +44,7 @@ const Signin = (props) => {
             email: auth.currentUser.email,
             uid: auth.currentUser.uid
         }));
+        navigate("/");
     }
 
     const signinWithGoogle = async()=>{
@@ -51,6 +61,7 @@ const Signin = (props) => {
             email: auth.currentUser.email,
             uid: auth.currentUser.uid
         }))
+        navigate("/");
     }
 
     return ( 

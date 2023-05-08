@@ -2,6 +2,8 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 import { useState } from "react";
 import { useCallback } from "react";
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 const Game = () => {
     const {unityProvider, loadingProgression, isLoaded} = useUnityContext({
         loaderUrl: "/cubesurfer/Build/cubesurfer.loader.js",
@@ -9,12 +11,16 @@ const Game = () => {
         frameworkUrl: "/cubesurfer/Build/cubesurfer.framework.js",
         codeUrl: "/cubesurfer/Build/cubesurfer.wasm",
     });
-
+    const user = useSelector((state) => state.user.email);
+    const navigate = useNavigate();
     const [devicePixelRatio, setDevicePixelRatio] = useState(
         window.devicePixelRatio
       );
 
       useEffect(()=>{
+        if(user == "Guest"){
+            navigate("/login");
+        }
         handleChangePixelRatio();
       },[]);
     

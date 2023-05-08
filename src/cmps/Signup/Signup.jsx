@@ -17,6 +17,14 @@ const Signup = (props) => {
     const [confirmPassword,setConfirmPassword] = useState("");
     const errors = useSelector((state) => state.errors.errors);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+    
+
+    useEffect(()=>{
+        if(user != "Guest"){
+            navigate("/");
+        }
+    })
     
     const signup = async()=>{
         try {
