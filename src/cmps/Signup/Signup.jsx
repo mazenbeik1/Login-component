@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { _setUser } from "../../Redux/user";
 import { _setErrors } from "../../Redux/error";
+import { useEffect } from "react";
 // import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 
 
@@ -18,6 +19,7 @@ const Signup = (props) => {
     const [confirmPassword,setConfirmPassword] = useState("");
     const errors = useSelector((state) => state.errors.errors);
     const dispatch = useDispatch();
+    const user = useSelector((state) => state.user.email);
     const navigate = useNavigate();
     
 
