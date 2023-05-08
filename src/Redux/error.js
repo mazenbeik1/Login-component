@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const errorsReducer = createSlice({
     name: "errors",
     initialState:{
-        errors: ["I am hungry", "static wrong password"]
+        errors: []
     },
     reducers:{
         _setErrors:(state, action)=>{

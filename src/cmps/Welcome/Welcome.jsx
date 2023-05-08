@@ -8,8 +8,8 @@ const Welcome = ()=> {
             <img src="/imgs/IoT.png" alt="Logo" style={{height:'30vh', transform:'translate(7px, 0)'}}/>
             <h1 className='WelcomeMsg'>Welcome to MZmZ IoT</h1>
             <p>Connect devices through internet</p>
-            <Button as={Link} to={'/workouts'} variant='secondary' className='button1 button2'>Get Started</Button>
-            <Button as={Link} to={'/cubesurfer'} variant='secondary' className='button1 button2'>Play</Button>
+            <Button as={Link} to={'/cubesurfer'} variant='primary' className='button1 button2'>Play Game</Button>
+            <Button as={Link} to={'/workouts'} variant='secondary' className='button1 button2'>Intro</Button>
         </div>
     </div>
     );

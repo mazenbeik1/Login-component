@@ -62,7 +62,7 @@ function WebNavbar(props) {
 
                     {/* <Wrap>
                         <WrapItem> */}
-                            <Avatar sx={{ width: 70, height: 70 }} src='/imgs/prof.jpg'/>
+                            {/* <Avatar sx={{ width: 70, height: 70 }} src='/imgs/prof.jpg'/> */}
                         {/* </WrapItem>
                     </Wrap> */}
 
