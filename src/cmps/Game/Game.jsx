@@ -43,12 +43,14 @@ const Game = () => {
 
     return ( 
         <div style={{textAlign:"center"}}>
-            <h1>GAME SHOULD BE LOADED HERE</h1>
+            <h1>If you are using phone refresh page after game is loaded to achieve full screen</h1>
             {!isLoaded && (
-                <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
-            )}
+                <>
+                    <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
+                    <h1>PLEASE WAIT UNTIL GAME IS LOADED</h1>
+                </>
+                )}
             <Unity style={{ width: '80%'}} devicePixelRatio={devicePixelRatio} unityProvider = {unityProvider}/>
-            <h1>Refresh page after game is loaded to achieve full screen</h1>
         </div>
      );
 }
