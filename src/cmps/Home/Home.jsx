@@ -1,5 +1,5 @@
 import Console from "../Console/Console";
-import SideBar from "../SideBar/SideBar";
+// import SideBar from "../SideBar/SideBar";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { auth } from "../../firebase/config";
