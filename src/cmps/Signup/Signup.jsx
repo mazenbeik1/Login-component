@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import {db} from '../../firebase/config'
 import { SocialIcon } from 'react-social-icons';
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { _setUser } from "../../Redux/user";
 import { _setErrors } from "../../Redux/error";
 // import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
