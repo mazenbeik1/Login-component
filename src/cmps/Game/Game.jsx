@@ -1,6 +1,7 @@
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { useState } from "react";
 import { useCallback } from "react";
+import { useEffect } from "react";
 const Game = () => {
     const {unityProvider, loadingProgression, isLoaded} = useUnityContext({
         loaderUrl: "/cubesurfer/Build/cubesurfer.loader.js",
@@ -12,6 +13,10 @@ const Game = () => {
     const [devicePixelRatio, setDevicePixelRatio] = useState(
         window.devicePixelRatio
       );
+
+      useEffect(()=>{
+        handleChangePixelRatio();
+      },[]);
     
       const handleChangePixelRatio = useCallback(
         function () {
