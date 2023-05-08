@@ -48,7 +48,7 @@ const Game = () => {
                 <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
             )}
             <Unity style={{ width: '80%'}} devicePixelRatio={devicePixelRatio} unityProvider = {unityProvider}/>
-            <h1>GAME SHOULD BE LOADED HERE</h1>
+            <h1>Refresh page after game is loaded to achieve full screen</h1>
         </div>
      );
 }
