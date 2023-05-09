@@ -26,7 +26,7 @@ const Welcome = ()=> {
                     </Col>
                 </Row>
                     <h1 className='WelcomeMsg'>{`Welcome ${user}`}</h1>
-                    <p>Connect devices through internet</p>
+                    <p>LETS ORBIT THE GALAXY</p>
                     <Button variant='primary' className='button1 button2' onClick={handleShowIntro}>Game Intro</Button>
                     <Button as={Link} to={'/cubesurfer'} variant='secondary' className='button1 button2'>Play Demo</Button>
                     <CenterModal
