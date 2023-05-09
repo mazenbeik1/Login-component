@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap";
 const Game = () => {
     const {unityProvider, loadingProgression, isLoaded} = useUnityContext({
         loaderUrl: "/cubesurfer/Build/cubesurfer.loader.js",
@@ -49,14 +50,16 @@ const Game = () => {
 
     return ( 
         <div style={{textAlign:"center"}}>
-            <h1>If you are using phone refresh page after game is loaded to achieve full screen</h1>
+            <p>If you are using phone refresh page after game is loaded to achieve full screen</p>
             {!isLoaded && (
                 <>
                     <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
                     <h1>PLEASE WAIT UNTIL GAME IS LOADED</h1>
                 </>
                 )}
-            <Unity style={{ width: '80%'}} devicePixelRatio={devicePixelRatio} unityProvider = {unityProvider}/>
+            <Unity style={{ width: '80%', height:"100%"}} devicePixelRatio={devicePixelRatio} unityProvider = {unityProvider}/>
+            <br />
+            <Button variant="primary" onClick={handleChangePixelRatio}>Full screen</Button>
         </div>
      );
 }
