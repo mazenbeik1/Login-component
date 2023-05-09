@@ -25,7 +25,7 @@ const Welcome = ()=> {
                         <img src="/imgs/LOGO3trans.png" alt="Logo" style={{height:'30vh', transform:'translate(7px, 0)'}}/>
                     </Col>
                 </Row>
-                    <h1 className='WelcomeMsg'>{`Welcome ${user}`}</h1>
+                    <h1 className='WelcomeMsg'>{`Welcome ${user.split("@")[0]}`}</h1>
                     <p>LETS ORBIT THE GALAXY</p>
                     <Button variant='primary' className='button1 button2' onClick={handleShowIntro}>Game Intro</Button>
                     <Button as={Link} to={'/cubesurfer'} variant='secondary' className='button1 button2'>Play Demo</Button>
