@@ -59,7 +59,7 @@ const Game = () => {
                 )}
             <Unity style={{ width: '80%', height:"100%"}} devicePixelRatio={devicePixelRatio} unityProvider = {unityProvider}/>
             <br />
-            <Button variant="primary" onClick={handleChangePixelRatio}>Full screen</Button>
+            {/* <Button variant="primary" onClick={handleChangePixelRatio}>Full screen</Button> */}
         </div>
      );
 }
