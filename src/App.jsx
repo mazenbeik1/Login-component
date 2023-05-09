@@ -16,8 +16,11 @@ import Workouts from './cmps/Workouts/Workouts';
 // import { Alert } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { _setUser } from './Redux/user';
-import { Alert } from 'react-bootstrap';
+// import { Alert } from 'react-bootstrap';
 import Game from './cmps/Game/Game';
+import { Alert } from '@mui/material';
+import { _clearErrors } from './Redux/error';
+import Portofolio from './cmps/Portofolio/Portofolio';
 
 function App() {
 	const dispatch = useDispatch();
@@ -44,7 +47,7 @@ function App() {
 		<div className="App">
 			<Router>
 				{errors.map((error)=>{
-					return(<Alert variant="danger" show={true}>{error}</Alert>)
+					return(<Alert severity="error" onClose={() => {dispatch(_clearErrors())}}>{error}</Alert>)
 				})}
 				<WebNavbar/>
 				<Routes>
@@ -60,6 +63,7 @@ function App() {
 					<Route path="/signup" element={<Signup />}/>
 					<Route path="/login" element={<Signin />}/>
 					<Route path="/cubesurfer" element={<Game />}/>
+					<Route path="/portofolio" element={<Portofolio />}/>
 					<Route path='*' element={<NotFound/>}/>
 				</Routes>
 			</Router>

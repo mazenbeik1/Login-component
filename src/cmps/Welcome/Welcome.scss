@@ -3,8 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 80vw;
+    height: fit-content;
+    min-width: 80vw;
+    width: fit-content;
     margin: 30px auto;
     background-color: rgba(239, 233, 233, 0.671);
     border-radius: 10em;
@@ -18,7 +19,10 @@
 }
 
 .WelcomeMsg{
-    padding: 2vw;
+    font-size: 150%;
+    text-align: center;
+    width: 95%;
+    padding: 20px 0px;
     background: linear-gradient(to right, #4bbae9a7 10%, #c207d76f 100%);
     border-radius: 50px;
 }

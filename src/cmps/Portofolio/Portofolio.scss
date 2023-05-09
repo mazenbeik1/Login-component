@@ -1,0 +1,36 @@
+.header{
+    text-align: center;
+    
+}
+
+
+.avatar{
+    border-radius: 10000px;
+    max-width: 250px;
+    max-height: 250px;
+    width:20%;
+    height: 20vw;
+    transform: translate3d(100px,-20px,0px);
+}
+
+.title{
+    border-radius: 100PX;
+    background-color: orange;
+    color: antiquewhite;
+    display: inline-block;
+    margin: auto;
+    width: fit-content;
+    min-width: 70%;
+    margin-top: 100px;
+    // transform: translate(0,20px);
+}
+
+.name{
+    text-align: center;
+    font-size: larger;
+}
+
+.profeciency{
+    text-align: center;
+    font-size: medium;
+}

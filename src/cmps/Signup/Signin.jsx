@@ -76,7 +76,7 @@ const Signin = (props) => {
                     </FloatingLabel>
                     
                     <FloatingLabel controlId="floatingPassword" label="Password" className="mb-3">
-                        <Form.Control type="password" placeholder='New Password' value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
+                        <Form.Control type="password" placeholder='Password' value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
                     </FloatingLabel>
                         
                     

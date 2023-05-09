@@ -75,7 +75,7 @@ function WebNavbar(props) {
                         title={user}
                         menuVariant="dark"
                         >
-                        <NavDropdown.Item onClick={()=>{console.log('object')}}>Action</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to={'/portofolio'}>About-us</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item onClick={handleSign}>
                             {signStatus}
