@@ -53,13 +53,13 @@ function App() {
 				<Routes>
 				
 					<Route path="/" element={<Welcome/>} />
-					<Route path="/console">
+					{/* <Route path="/console">
 						<Route path=":id" element={<Home/>} />
-					</Route>
-					<Route path="/workouts">
+					</Route> */}
+					{/* <Route path="/workouts">
 						<Route path=":id" element={<Workouts/>} />
 						<Route path="" element={<Workouts/>} />
-					</Route>
+					</Route> */}
 					<Route path="/signup" element={<Signup />}/>
 					<Route path="/login" element={<Signin />}/>
 					<Route path="/cubesurfer" element={<Game />}/>

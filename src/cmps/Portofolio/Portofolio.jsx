@@ -5,7 +5,9 @@ import PortoHeader from "./PortoHeader/PortoHeader";
 const Portofolio = () => {
     return ( 
         <>
-            <PortoHeader/>           
+            <div className="portofolio">
+                <PortoHeader/>           
+            </div>
         </>
      );
 }

@@ -1,25 +1,35 @@
+.portofolio{
+    background-color: rgb(19, 113, 190);
+}
+
 .header{
     text-align: center;
-    
 }
 
 
 .avatar{
-    width: 10vw;
-    height: 10vw;
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    // margin-top: 20px;
+    margin-bottom: 0px !important;
+    transform: translate(0,120px);
     // width: 20em;
     // border-radius: 1000px;
 }
 
 .title{
     border-radius: 100PX;
-    background-color: orange;
+    background-color: rgba(107, 142, 170, 0.591);
     color: antiquewhite;
     display: inline-block;
-    margin: auto;
+    // margin: auto;
     width: fit-content;
     min-width: 70%;
-    margin-top: 100px;
+    // margin-top: 100px;
+    padding: 15px;
+    padding-top: 120px !important;
+    border-radius: 1000px;
     // transform: translate(0,20px);
 }
 

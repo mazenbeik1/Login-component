@@ -16,6 +16,7 @@ function WebNavbar(props) {
     const user = useSelector((state) => state.user.email);
     const signStatus = useSelector((state) => state.user.signStatus);
     const dispatch = useDispatch();
+    const [navColor, setNavColor] = useState("rgb(160, 49, 49)")
     console.log(user);
 
 
@@ -47,7 +48,7 @@ function WebNavbar(props) {
 
 
     return (
-        <Navbar className='navbar'>
+        <Navbar className='navbar' style={{backgroundColor:navColor}}>
             <Container>
                 <img src="/imgs/logo.png" alt="" style={{width: "7vh"}}/>
                 {/* <Wrap>
@@ -75,9 +76,11 @@ function WebNavbar(props) {
                         title={user}
                         menuVariant="dark"
                         >
-                        <NavDropdown.Item as={Link} to={'/portofolio'}>About-us</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to={'/'} onClick={()=>setNavColor("rgb(160, 49, 49)")}>Home</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to={'/portofolio'} onClick={()=>setNavColor("rgb(19, 113, 190)")}>Portofolio</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to={'/notfound'} onClick={()=>setNavColor("rgb(160, 49, 49)")}>Not-Found</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item onClick={handleSign}>
+                        <NavDropdown.Item onClick={handleSign} >
                             {signStatus}
                         </NavDropdown.Item>
                         </NavDropdown>
