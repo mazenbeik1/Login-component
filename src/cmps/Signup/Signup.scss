@@ -17,6 +17,7 @@
     height: auto;
     padding: 20px;
     border-radius: 30px;
+    // margin: 0 !important;
     transform: translate(100px,95px);
 }
 
@@ -26,6 +27,7 @@
 }
 
 .IndexImg{
+    display: inline;
     border-radius: 30px;
     height: 100%;
     width: 40%;

@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { signOut } from "firebase/auth";
 import { auth, googleProvider } from "../../firebase/config";
@@ -28,6 +28,7 @@ function WebNavbar(props) {
     const navigate = useNavigate();
 
     const handleSign =()=>{
+        setNavColor("rgb(160, 49, 49)")
         if(!(auth?.currentUser?.email)){
             navigate("/login");
         }else{
@@ -56,7 +57,7 @@ function WebNavbar(props) {
                         <Avatar size='xs' name='Mazen Elbeik' src='/imgs/logo.png'/>
                     </WrapItem>
                 </Wrap> */}
-                <Navbar.Brand as={Link} to="/" >MeSoverse</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/" onClick={()=>setNavColor("rgb(160, 49, 49)")}>MeSoverse</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Image src='/imgs/guest.png' style={{width:'7vh', backgroundColor: 'white', margin: '0 10px'}} rounded/>
