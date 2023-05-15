@@ -13,7 +13,11 @@
     margin: auto;
     // margin-top: 20px;
     margin-bottom: 0px !important;
-    transform: translate(0,120px);
+    transform: translate(0,130px);
+    border-width: 10px;
+    border-color: rgba(6, 31, 52, 0.591);
+    // border-style: outset;
+
     // width: 20em;
     // border-radius: 1000px;
 }
@@ -21,7 +25,7 @@
 .title{
     border-radius: 100PX;
     background-color: rgba(6, 31, 52, 0.591);
-    color: antiquewhite;
+    color: rgb(246, 246, 246);
     display: inline-block;
     // margin: auto;
     width: fit-content;
@@ -30,6 +34,10 @@
     padding: 15px;
     padding-top: 120px !important;
     border-radius: 1000px;
+    // box-shadow: 10px 10px 10px rgba(6, 31, 52, 0.591);
+    border-color: rgba(6, 31, 52, 0.591);
+    border-width: 10px;
+    border-style: outset ;
     // transform: translate(0,20px);
 }
 
