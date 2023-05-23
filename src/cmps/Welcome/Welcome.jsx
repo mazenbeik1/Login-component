@@ -16,7 +16,7 @@ const Welcome = ()=> {
         <div className="WelcomePage-content">
   
             
-                        <img src='/imgs/prof.jpg' style={{width: 200, height: 200,borderRadius:"100px",display:"inline-block"}}/>
+                        {/* <img src='/imgs/muscles-blurred.png' style={{width: 200, height: 200,borderRadius:"100px",display:"inline-block"}}/> */}
                         <br/>
                         <img src="/imgs/LOGO3trans.png" alt="Logo" style={{height:'30vh', transform:'translate(7px, 0)'}}/>
                     <h1 className='WelcomeMsg'>{`Welcome ${user.split("@")[0]}`}</h1>

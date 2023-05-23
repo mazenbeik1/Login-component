@@ -34,10 +34,10 @@
     padding: 15px;
     padding-top: 120px !important;
     border-radius: 1000px;
-    // box-shadow: 10px 10px 10px rgba(6, 31, 52, 0.591);
+    box-shadow: 5px 10px 10px rgba(6, 31, 52, 0.591);
     border-color: rgba(6, 31, 52, 0.591);
     border-width: 10px;
-    border-style: outset ;
+    border-style: double ;
     // transform: translate(0,20px);
 }
 
@@ -49,4 +49,12 @@
 .profeciency{
     text-align: center;
     font-size: medium;
+}
+
+.portoLink{
+    background-color: white;
+    border-radius: 100px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: gold;
 }
